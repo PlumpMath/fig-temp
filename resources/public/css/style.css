@@ -1,0 +1,39 @@
+/* some style */
+
+#grid {
+    display: grid;
+
+    grid-definition-colums: 1fr 1fr 1fr;
+    grid-definition-rows: 40px 150px 1fr 1fr 1fr 50px;
+
+    grid-template: "navbar navbar navbar"
+                    "header header header"
+                    "sidebar main main"
+                    "sidebar main main"
+                    "footer footer footer";
+}
+
+#navbar  {
+    grid-area: navbar;
+    background-color: #acfffc
+}
+
+#header  {
+    grid-area: header;
+    background-color: #ff94bd
+}
+
+#main    {
+    grid-area: main;
+    background-color: #fffd8e
+}
+
+#sidebar {
+    grid-area: sidebar;
+    background-color: #9dff89
+}
+
+#footer  {
+    grid-area: footer;
+    background-color: #ff8545
+}
